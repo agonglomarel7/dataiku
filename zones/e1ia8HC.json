@@ -3,7 +3,7 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "sinistres",
+      "objectId": "sinistres_raw",
       "objectType": "DATASET"
     }
   ],
