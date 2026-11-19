@@ -1,7 +1,12 @@
 {
   "name": "Products",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "produits",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
