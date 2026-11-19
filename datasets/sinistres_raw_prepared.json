@@ -96,10 +96,10 @@
     "columns": [
       {"name":"sinistre_id","type":"string"},
       {"name":"contrat_id","type":"string"},
-      {"name":"date_survenance","type":"string"},
+      {"name":"date_survenance","type":"string","meaning":"DateSource"},
       {"name":"date_declaration","type":"dateonly"},
       {"name":"type_sinistre","type":"string"},
-      {"name":"montant","type":"string"},
+      {"name":"montant","type":"string","meaning":"FrenchDoubleMeaning"},
       {"name":"statut","type":"string"}
     ],
     "userModified": true
