@@ -1,6 +1,36 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "sinistre_id"
+      },
+      {
+        "d": true,
+        "name": "contrat_id"
+      },
+      {
+        "d": true,
+        "name": "date_survenance"
+      },
+      {
+        "d": true,
+        "name": "date_declaration"
+      },
+      {
+        "d": true,
+        "name": "type_sinistre"
+      },
+      {
+        "d": true,
+        "name": "montant"
+      },
+      {
+        "d": true,
+        "name": "statut"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +60,50 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "date_survenance"
+        ],
+        "values": [
+          "2025-05-06"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "exclude": false,
+        "processNullOrEmptyValues": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "NumericalFormatConverter",
+      "params": {
+        "inFormat": "RAW",
+        "outCol": "",
+        "columns": [
+          "montant"
+        ],
+        "outFormat": "FR",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +131,16 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date_survenance_parsed": 180,
+    "type_sinistre": 183,
+    "sinistre_id": 127,
+    "montant": 134,
+    "contrat_id": 120,
+    "date_declaration": 162,
+    "date_survenance": 155,
+    "statut": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
