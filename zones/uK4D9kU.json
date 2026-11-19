@@ -1,7 +1,12 @@
 {
   "name": "Clients",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "clients",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
