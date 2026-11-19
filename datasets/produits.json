@@ -70,12 +70,31 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "f48c4de0479569664d266d7e86f3af2151520d4f223c3e5e8c3143e9f48d5d71",
     "files": [
       "/produits.csv"
     ],
-    "uploadConnection": "dataiku-managed-storage",
     "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-data-eu-west-3",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_produits",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/produits",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      },
+      "variablesExpansionLoopConfig": {
+        "enabled": false,
+        "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+        "replacements": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
     "notReadyIfEmpty": false,
     "previewFile": "/produits.csv",
     "filesSelectionRules": {
