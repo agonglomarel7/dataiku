@@ -1,7 +1,12 @@
 {
   "name": "Sinistres",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "sinistres",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
