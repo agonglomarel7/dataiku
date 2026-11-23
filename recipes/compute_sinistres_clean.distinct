@@ -5,7 +5,28 @@
   },
   "keys": [
     {
-      "column": "sinistre_id"
+      "column": "contrat_id"
+    },
+    {
+      "column": "date_survenance_parsed"
+    },
+    {
+      "column": "date_survenance_parsed_year"
+    },
+    {
+      "column": "date_survenance_parsed_month"
+    },
+    {
+      "column": "date_declaration"
+    },
+    {
+      "column": "type_sinistre"
+    },
+    {
+      "column": "montant_decimal"
+    },
+    {
+      "column": "statut"
     }
   ],
   "globalCount": false,
@@ -53,11 +74,53 @@
   "outputColumnNameOverrides": {},
   "selectAllColumns": false,
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "contrat_id",
+          "col": "date_survenance_parsed",
+          "$showList": false,
+          "items": [],
+          "operator": "contains"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
           {
-            "name": "sinistre_id",
+            "name": "contrat_id",
+            "type": "string"
+          },
+          {
+            "name": "date_survenance_parsed",
+            "type": "dateonly"
+          },
+          {
+            "name": "date_survenance_parsed_year",
+            "type": "bigint"
+          },
+          {
+            "name": "date_survenance_parsed_month",
+            "type": "bigint"
+          },
+          {
+            "name": "date_declaration",
+            "type": "dateonly"
+          },
+          {
+            "name": "type_sinistre",
+            "type": "string"
+          },
+          {
+            "name": "montant_decimal",
+            "type": "double"
+          },
+          {
+            "name": "statut",
             "type": "string"
           }
         ],
