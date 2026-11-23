@@ -29,6 +29,14 @@
     {
       "objectId": "sinistres_contrats",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sinistres_contrats_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sinistres_contrats_joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
