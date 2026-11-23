@@ -1,0 +1,150 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "sinistre_id",
+          "d": true
+        },
+        {
+          "name": "contrat_id",
+          "d": true
+        },
+        {
+          "name": "date_survenance_parsed",
+          "d": true
+        },
+        {
+          "name": "date_survenance_parsed_year",
+          "d": true
+        },
+        {
+          "name": "date_survenance_parsed_month",
+          "d": true
+        },
+        {
+          "name": "date_declaration",
+          "d": true
+        },
+        {
+          "name": "type_sinistre",
+          "d": true
+        },
+        {
+          "name": "montant_decimal",
+          "d": true
+        },
+        {
+          "name": "statut",
+          "d": true
+        },
+        {
+          "name": "client_id",
+          "d": true
+        },
+        {
+          "name": "produit_code",
+          "d": true
+        },
+        {
+          "name": "pays",
+          "d": true
+        },
+        {
+          "name": "branche",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "sinistre_id": 127,
+      "contrat_id": 120,
+      "date_survenance_parsed": 180,
+      "date_survenance_parsed_year": 218,
+      "date_survenance_parsed_month": 225,
+      "date_declaration": 162,
+      "type_sinistre": 183,
+      "montant_decimal": 134,
+      "statut": 100,
+      "client_id": 113,
+      "produit_code": 105,
+      "pays": 100,
+      "branche": 100
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1795443814394
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": [],
+  "hierarchies": []
+}
