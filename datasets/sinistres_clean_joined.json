@@ -74,11 +74,8 @@
       {"name":"type_sinistre","type":"string"},
       {"name":"montant_decimal","type":"double"},
       {"name":"statut","type":"string"},
-      {"name":"client_id","type":"string","originalType":"varchar","maxLength":10},
-      {"name":"produit_code","type":"string","originalType":"varchar","maxLength":10},
-      {"name":"date_effet","type":"dateonly","originalType":"date"},
-      {"name":"date_resiliation","type":"dateonly","originalType":"date"},
-      {"name":"prime_annuelle","type":"double","originalType":"numeric"}
+      {"name":"client_id","type":"string","maxLength":10},
+      {"name":"produit_code","type":"string","maxLength":10}
     ],
     "userModified": true
   },
