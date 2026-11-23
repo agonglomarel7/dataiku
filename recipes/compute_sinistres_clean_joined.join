@@ -25,18 +25,6 @@
           "type": "EQ",
           "strict": false,
           "windowTo": 0
-        },
-        {
-          "column1": {
-            "name": "statut",
-            "table": 0
-          },
-          "dateDiffUnit": "SECOND",
-          "column2": {
-            "name": "statut",
-            "table": 1
-          },
-          "type": "EQ"
         }
       ]
     }
@@ -96,21 +84,6 @@
       "name": "produit_code",
       "type": "string",
       "table": 1
-    },
-    {
-      "name": "date_effet",
-      "type": "dateonly",
-      "table": 1
-    },
-    {
-      "name": "date_resiliation",
-      "type": "dateonly",
-      "table": 1
-    },
-    {
-      "name": "prime_annuelle",
-      "type": "double",
-      "table": 1
     }
   ],
   "resolvedSelectedColumns": [],
@@ -157,17 +130,18 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
       },
       "originLabel": "sinistres_clean",
+      "prefix": "",
       "index": 0,
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -229,21 +203,6 @@
             "name": "produit_code",
             "type": "string",
             "maxLength": 10
-          },
-          {
-            "originalType": "date",
-            "name": "date_effet",
-            "type": "dateonly"
-          },
-          {
-            "originalType": "date",
-            "name": "date_resiliation",
-            "type": "dateonly"
-          },
-          {
-            "originalType": "numeric",
-            "name": "prime_annuelle",
-            "type": "double"
           }
         ],
         "userModified": false
