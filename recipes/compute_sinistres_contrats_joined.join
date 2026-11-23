@@ -6,89 +6,123 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "client_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "client_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "produit_code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "produit_code",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "sinistre_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "contrat_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "date_survenance_parsed",
+      "type": "dateonly",
       "table": 0
     },
     {
       "name": "date_survenance_parsed_year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_survenance_parsed_month",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_declaration",
+      "type": "dateonly",
       "table": 0
     },
     {
       "name": "type_sinistre",
+      "type": "string",
       "table": 0
     },
     {
       "name": "montant_decimal",
+      "type": "double",
       "table": 0
     },
     {
       "name": "statut",
+      "type": "string",
       "table": 0
     },
     {
       "name": "client_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "produit_code",
+      "type": "string",
       "table": 0
     },
     {
-      "name": "civilite",
-      "table": 1
-    },
-    {
-      "name": "prenom",
-      "table": 1
-    },
-    {
-      "name": "nom",
-      "table": 1
-    },
-    {
-      "name": "date_naissance",
-      "table": 1
-    },
-    {
       "name": "pays",
+      "type": "string",
       "table": 1
     },
     {
-      "name": "ville",
-      "table": 1
-    },
-    {
-      "name": "code_postal",
-      "table": 1
-    },
-    {
-      "name": "date_entree",
-      "table": 1
-    },
-    {
-      "name": "canal_acquisition",
-      "table": 1
+      "name": "branche",
+      "type": "string",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -145,7 +179,7 @@
       "computedColumns": []
     },
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "MANUAL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -153,7 +187,76 @@
       "originLabel": "clients",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {},
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "sinistre_id",
+            "type": "string"
+          },
+          {
+            "name": "contrat_id",
+            "type": "string"
+          },
+          {
+            "name": "date_survenance_parsed",
+            "type": "dateonly"
+          },
+          {
+            "name": "date_survenance_parsed_year",
+            "type": "bigint"
+          },
+          {
+            "name": "date_survenance_parsed_month",
+            "type": "bigint"
+          },
+          {
+            "name": "date_declaration",
+            "type": "dateonly"
+          },
+          {
+            "name": "type_sinistre",
+            "type": "string"
+          },
+          {
+            "name": "montant_decimal",
+            "type": "double"
+          },
+          {
+            "name": "statut",
+            "type": "string"
+          },
+          {
+            "name": "client_id",
+            "type": "string",
+            "maxLength": 10
+          },
+          {
+            "name": "produit_code",
+            "type": "string",
+            "maxLength": 10
+          },
+          {
+            "name": "pays",
+            "type": "string"
+          },
+          {
+            "name": "branche",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
