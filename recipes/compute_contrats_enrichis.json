@@ -19,6 +19,10 @@
         {
           "ref": "clients",
           "deps": []
+        },
+        {
+          "ref": "produits",
+          "deps": []
         }
       ]
     }
