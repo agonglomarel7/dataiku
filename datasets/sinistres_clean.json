@@ -65,6 +65,7 @@
   },
   "schema": {
     "columns": [
+      {"name":"sinistre_id","type":"string"},
       {"name":"contrat_id","type":"string"},
       {"name":"date_survenance_parsed","type":"dateonly"},
       {"name":"date_survenance_parsed_year","type":"bigint"},
