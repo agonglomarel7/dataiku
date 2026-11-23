@@ -40,6 +40,10 @@
       },
       {
         "d": true,
+        "name": "montant_decimal"
+      },
+      {
+        "d": true,
         "name": "statut"
       }
     ]
@@ -163,6 +167,22 @@
           "date_survenance_parsed_day"
         ],
         "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "NumericalFormatConverter",
+      "params": {
+        "inFormat": "FR",
+        "outCol": "montant_decimal",
+        "columns": [
+          "montant"
+        ],
+        "outFormat": "RAW",
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
