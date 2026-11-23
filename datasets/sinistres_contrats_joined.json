@@ -76,15 +76,8 @@
       {"name":"statut","type":"string"},
       {"name":"client_id","type":"string","maxLength":10},
       {"name":"produit_code","type":"string","maxLength":10},
-      {"name":"civilite","type":"string"},
-      {"name":"prenom","type":"string"},
-      {"name":"nom","type":"string"},
-      {"name":"date_naissance","type":"string"},
       {"name":"pays","type":"string"},
-      {"name":"ville","type":"string"},
-      {"name":"code_postal","type":"string"},
-      {"name":"date_entree","type":"string"},
-      {"name":"canal_acquisition","type":"string"}
+      {"name":"branche","type":"string"}
     ],
     "userModified": true
   },
