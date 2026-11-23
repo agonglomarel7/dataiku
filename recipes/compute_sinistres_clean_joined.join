@@ -32,57 +32,46 @@
   "selectedColumns": [
     {
       "name": "sinistre_id",
-      "type": "string",
       "table": 0
     },
     {
       "name": "contrat_id",
-      "type": "string",
       "table": 0
     },
     {
       "name": "date_survenance_parsed",
-      "type": "dateonly",
       "table": 0
     },
     {
       "name": "date_survenance_parsed_year",
-      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_survenance_parsed_month",
-      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_declaration",
-      "type": "dateonly",
       "table": 0
     },
     {
       "name": "type_sinistre",
-      "type": "string",
       "table": 0
     },
     {
       "name": "montant_decimal",
-      "type": "double",
       "table": 0
     },
     {
       "name": "statut",
-      "type": "string",
       "table": 0
     },
     {
       "name": "client_id",
-      "type": "string",
       "table": 1
     },
     {
       "name": "produit_code",
-      "type": "string",
       "table": 1
     }
   ],
@@ -135,8 +124,8 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "sinistres_clean",
       "prefix": "",
+      "originLabel": "sinistres_clean",
       "index": 0,
       "computedColumns": []
     },
@@ -151,63 +140,10 @@
       "computedColumns": []
     }
   ],
-  "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "sinistre_id",
-            "type": "string"
-          },
-          {
-            "name": "contrat_id",
-            "type": "string"
-          },
-          {
-            "name": "date_survenance_parsed",
-            "type": "dateonly"
-          },
-          {
-            "name": "date_survenance_parsed_year",
-            "type": "bigint"
-          },
-          {
-            "name": "date_survenance_parsed_month",
-            "type": "bigint"
-          },
-          {
-            "name": "date_declaration",
-            "type": "dateonly"
-          },
-          {
-            "name": "type_sinistre",
-            "type": "string"
-          },
-          {
-            "name": "montant_decimal",
-            "type": "double"
-          },
-          {
-            "name": "statut",
-            "type": "string"
-          },
-          {
-            "originalType": "varchar",
-            "name": "client_id",
-            "type": "string",
-            "maxLength": 10
-          },
-          {
-            "originalType": "varchar",
-            "name": "produit_code",
-            "type": "string",
-            "maxLength": 10
-          }
-        ],
-        "userModified": false
-      }
-    }
+    "distinct": false,
+    "enabled": false
   },
+  "computedColumns": [],
   "enableAutoCastInJoinConditions": false
 }

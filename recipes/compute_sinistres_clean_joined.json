@@ -27,7 +27,7 @@
     "main": {
       "items": [
         {
-          "ref": "sinistres_clean_joined",
+          "ref": "sinistres_contrats",
           "appendMode": false
         }
       ]
