@@ -75,7 +75,7 @@
     }
   },
   "outputColumnNameOverrides": {},
-  "selectAllColumns": true,
+  "selectAllColumns": false,
   "postFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
