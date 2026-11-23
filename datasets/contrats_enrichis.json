@@ -65,22 +65,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"contrat_id","type":"string","originalType":"varchar","maxLength":10},
-      {"name":"client_id","type":"string","originalType":"varchar","maxLength":10},
-      {"name":"produit_code","type":"string","originalType":"varchar","maxLength":10},
-      {"name":"date_effet","type":"dateonly","originalType":"date"},
-      {"name":"date_resiliation","type":"dateonly","originalType":"date"},
-      {"name":"prime_annuelle","type":"double","originalType":"numeric"},
-      {"name":"statut","type":"string","originalType":"varchar","maxLength":10},
-      {"name":"civilite","type":"string"},
-      {"name":"prenom","type":"string"},
-      {"name":"nom","type":"string"},
-      {"name":"date_naissance","type":"string"},
+      {"name":"contrat_id","type":"string","maxLength":10},
+      {"name":"client_id","type":"string","maxLength":10},
+      {"name":"produit_code","type":"string","maxLength":10},
+      {"name":"date_effet","type":"dateonly"},
+      {"name":"date_resiliation","type":"dateonly"},
+      {"name":"prime_annuelle","type":"double"},
+      {"name":"statut","type":"string","maxLength":10},
       {"name":"pays","type":"string"},
-      {"name":"ville","type":"string"},
-      {"name":"code_postal","type":"string"},
-      {"name":"date_entree","type":"string"},
-      {"name":"canal_acquisition","type":"string"}
+      {"name":"branche","type":"string"}
     ],
     "userModified": true
   },
