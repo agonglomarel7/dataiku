@@ -6,24 +6,6 @@
   "keys": [
     {
       "column": "sinistre_id"
-    },
-    {
-      "column": "contrat_id"
-    },
-    {
-      "column": "date_survenance"
-    },
-    {
-      "column": "date_declaration"
-    },
-    {
-      "column": "type_sinistre"
-    },
-    {
-      "column": "montant"
-    },
-    {
-      "column": "statut"
     }
   ],
   "globalCount": false,
@@ -71,6 +53,17 @@
   "outputColumnNameOverrides": {},
   "selectAllColumns": false,
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "sinistre_id",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
