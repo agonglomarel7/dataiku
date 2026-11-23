@@ -36,10 +36,6 @@
       },
       {
         "d": true,
-        "name": "montant"
-      },
-      {
-        "d": true,
         "name": "montant_decimal"
       },
       {
@@ -172,7 +168,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "NumericalFormatConverter",
@@ -183,6 +179,20 @@
           "montant"
         ],
         "outFormat": "RAW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "montant"
+        ],
+        "keep": false,
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
