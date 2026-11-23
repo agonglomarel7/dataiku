@@ -16,6 +16,18 @@
       },
       {
         "d": true,
+        "name": "date_survenance_parsed"
+      },
+      {
+        "d": true,
+        "name": "date_survenance_parsed_year"
+      },
+      {
+        "d": true,
+        "name": "date_survenance_parsed_month"
+      },
+      {
+        "d": true,
         "name": "date_declaration"
       },
       {
@@ -88,7 +100,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "NumericalFormatConverter",
@@ -99,6 +111,58 @@
           "montant"
         ],
         "outFormat": "FR",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "date_survenance_parsed",
+        "formats": [
+          "yyyy-MM-dd",
+          "dd/MM/yyyy",
+          "dd-MM-yyyy"
+        ],
+        "columns": [
+          "date_survenance"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "en_US",
+        "outType": {
+          "type": "dateonly"
+        }
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "date_survenance_parsed_month",
+        "outYearColumn": "date_survenance_parsed_year",
+        "column": "date_survenance_parsed",
+        "timezone_id": "UTC",
+        "outDayColumn": "date_survenance_parsed_day"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "date_survenance_parsed_day"
+        ],
+        "keep": false,
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
@@ -133,8 +197,12 @@
   "flagNumericValues": true,
   "columnWidthsByName": {
     "date_survenance_parsed": 180,
+    "date_survenance_parsed_year": 218,
+    "date_survenance_parsed_day": 210,
     "type_sinistre": 183,
     "sinistre_id": 127,
+    "montant_decimal": 134,
+    "date_survenance_parsed_month": 225,
     "montant": 134,
     "contrat_id": 120,
     "date_declaration": 162,
