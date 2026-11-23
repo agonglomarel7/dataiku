@@ -12,10 +12,6 @@
       },
       {
         "d": true,
-        "name": "date_survenance"
-      },
-      {
-        "d": true,
         "name": "date_survenance_parsed"
       },
       {
@@ -190,10 +186,11 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "date_survenance",
           "montant"
         ],
         "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
