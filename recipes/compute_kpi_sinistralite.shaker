@@ -1,6 +1,56 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "year"
+      },
+      {
+        "d": true,
+        "name": "branche"
+      },
+      {
+        "d": true,
+        "name": "pays"
+      },
+      {
+        "d": true,
+        "name": "nb_sinistres"
+      },
+      {
+        "d": true,
+        "name": "charge"
+      },
+      {
+        "d": true,
+        "name": "nb_montants"
+      },
+      {
+        "d": true,
+        "name": "cout_moyen"
+      },
+      {
+        "d": true,
+        "name": "nb_contrat_actifs"
+      },
+      {
+        "d": true,
+        "name": "frequence"
+      },
+      {
+        "d": true,
+        "name": "total_primes"
+      },
+      {
+        "d": true,
+        "name": "ratio_sp"
+      },
+      {
+        "d": true,
+        "name": "count"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +80,48 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(1.0*charge)/total_primes",
+        "column": "ratio_sp",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(1.0*charge)/nb_montants",
+        "column": "cout_moyen",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(1.0*nb_sinistres) / nb_contrat_actifs",
+        "column": "frequence",
+        "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +149,20 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "ratio_sp": 148,
+    "nb_sinistres": 105,
+    "charge": 141,
+    "cout_moyen": 141,
+    "year": 100,
+    "branche": 100,
+    "count": 100,
+    "frequence": 148,
+    "total_primes": 141,
+    "nb_contrat_actifs": 143,
+    "pays": 100,
+    "nb_montants": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
