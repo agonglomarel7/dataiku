@@ -5,7 +5,43 @@
   },
   "keys": [
     {
-      "column": "branche"
+      "last": false,
+      "max": false,
+      "column": "branche",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "mode": false,
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "pays",
+      "count": false,
+      "$idx": 7,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "mode": false,
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "median": false,
+      "$selected": false,
+      "stddev": false,
+      "modeMultiple": false,
+      "modeIncludeNulls": false,
+      "first": false
     }
   ],
   "values": [
@@ -14,9 +50,11 @@
       "max": false,
       "firstLastNotNull": false,
       "column": "contrat_id",
-      "count": false,
+      "count": true,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -24,6 +62,7 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "modeMultiple": false,
       "modeIncludeNulls": false,
@@ -35,8 +74,10 @@
       "firstLastNotNull": false,
       "column": "client_id",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -55,8 +96,10 @@
       "firstLastNotNull": false,
       "column": "produit_code",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "string",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -75,8 +118,10 @@
       "firstLastNotNull": false,
       "column": "date_effet",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "dateonly",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -95,8 +140,10 @@
       "firstLastNotNull": false,
       "column": "date_resiliation",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "dateonly",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -115,8 +162,10 @@
       "firstLastNotNull": false,
       "column": "prime_annuelle",
       "count": false,
-      "sum": false,
+      "$idx": 5,
+      "sum": true,
       "concat": false,
+      "type": "double",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -124,6 +173,7 @@
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "modeMultiple": false,
       "modeIncludeNulls": false,
@@ -135,28 +185,10 @@
       "firstLastNotNull": false,
       "column": "statut",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
-      "mode": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "median": false,
-      "stddev": false,
-      "modeMultiple": false,
-      "modeIncludeNulls": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "pays",
-      "count": false,
-      "sum": false,
-      "concat": false,
+      "type": "string",
       "mode": false,
       "concatDistinct": false,
       "sum2": false,
@@ -213,8 +245,36 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "branche",
+            "type": "string"
+          },
+          {
+            "name": "pays",
+            "type": "string"
+          },
+          {
+            "name": "contrat_id_count",
+            "type": "bigint"
+          },
+          {
+            "name": "prime_annuelle_sum",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
