@@ -67,9 +67,12 @@
     "columns": [
       {"name":"sinistre_id","type":"string"},
       {"name":"contrat_id","type":"string"},
+      {"name":"date_survenance","type":"dateonly"},
       {"name":"year","type":"bigint"},
+      {"name":"month","type":"bigint"},
       {"name":"date_declaration","type":"dateonly"},
       {"name":"type_sinistre","type":"string"},
+      {"name":"montant","type":"double"},
       {"name":"statut","type":"string"},
       {"name":"client_id","type":"string","maxLength":10},
       {"name":"produit_code","type":"string","maxLength":10},
