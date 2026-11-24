@@ -68,6 +68,7 @@
       {"name":"sinistre_id","type":"string"},
       {"name":"contrat_id","type":"string"},
       {"name":"date_survenance_parsed","type":"dateonly"},
+      {"name":"year","type":"bigint"},
       {"name":"date_survenance_parsed_month","type":"bigint"},
       {"name":"date_declaration","type":"dateonly"},
       {"name":"type_sinistre","type":"string"},
