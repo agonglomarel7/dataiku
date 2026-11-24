@@ -66,6 +66,9 @@
   "schema": {
     "columns": [
       {"name":"year","type":"bigint"},
+      {"name":"branche","type":"string"},
+      {"name":"pays","type":"string"},
+      {"name":"montant_decimal_count","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
