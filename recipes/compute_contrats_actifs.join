@@ -6,73 +6,158 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "client_id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "client_id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "produit_code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "produit_code",
+            "table": 2
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "contrat_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "client_id",
+      "type": "string",
       "table": 0
     },
     {
       "name": "produit_code",
+      "type": "string",
       "table": 0
     },
     {
       "name": "date_effet",
+      "type": "dateonly",
       "table": 0
     },
     {
       "name": "date_resiliation",
+      "type": "dateonly",
       "table": 0
     },
     {
       "name": "prime_annuelle",
+      "type": "double",
       "table": 0
     },
     {
       "name": "statut",
+      "type": "string",
       "table": 0
     },
     {
       "name": "civilite",
+      "type": "string",
       "table": 1
     },
     {
       "name": "prenom",
+      "type": "string",
       "table": 1
     },
     {
       "name": "nom",
+      "type": "string",
       "table": 1
     },
     {
       "name": "date_naissance",
+      "type": "string",
       "table": 1
     },
     {
       "name": "pays",
+      "type": "string",
       "table": 1
     },
     {
       "name": "ville",
+      "type": "string",
       "table": 1
     },
     {
       "name": "code_postal",
+      "type": "string",
       "table": 1
     },
     {
       "name": "date_entree",
+      "type": "string",
       "table": 1
     },
     {
       "name": "canal_acquisition",
+      "type": "string",
       "table": 1
+    },
+    {
+      "name": "produit_libelle",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "branche",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "prime_base",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "franchise",
+      "type": "string",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -137,7 +222,129 @@
       "originLabel": "clients",
       "index": 1,
       "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 2
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "statut",
+          "col": "client_id",
+          "string": "Actif",
+          "$showList": false,
+          "items": [],
+          "operator": "\u003d\u003d [string]"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "originalType": "varchar",
+            "name": "contrat_id",
+            "type": "string",
+            "maxLength": 10
+          },
+          {
+            "originalType": "varchar",
+            "name": "client_id",
+            "type": "string",
+            "maxLength": 10
+          },
+          {
+            "originalType": "varchar",
+            "name": "produit_code",
+            "type": "string",
+            "maxLength": 10
+          },
+          {
+            "originalType": "date",
+            "name": "date_effet",
+            "type": "dateonly"
+          },
+          {
+            "originalType": "date",
+            "name": "date_resiliation",
+            "type": "dateonly"
+          },
+          {
+            "originalType": "numeric",
+            "name": "prime_annuelle",
+            "type": "double"
+          },
+          {
+            "originalType": "varchar",
+            "name": "statut",
+            "type": "string",
+            "maxLength": 10
+          },
+          {
+            "name": "civilite",
+            "type": "string"
+          },
+          {
+            "name": "prenom",
+            "type": "string"
+          },
+          {
+            "name": "nom",
+            "type": "string"
+          },
+          {
+            "name": "date_naissance",
+            "type": "string"
+          },
+          {
+            "name": "pays",
+            "type": "string"
+          },
+          {
+            "name": "ville",
+            "type": "string"
+          },
+          {
+            "name": "code_postal",
+            "type": "string"
+          },
+          {
+            "name": "date_entree",
+            "type": "string"
+          },
+          {
+            "name": "canal_acquisition",
+            "type": "string"
+          },
+          {
+            "name": "produit_libelle",
+            "type": "string"
+          },
+          {
+            "name": "branche",
+            "type": "string"
+          },
+          {
+            "name": "prime_base",
+            "type": "string"
+          },
+          {
+            "name": "franchise",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "enabled": true
+  },
   "enableAutoCastInJoinConditions": false
 }
