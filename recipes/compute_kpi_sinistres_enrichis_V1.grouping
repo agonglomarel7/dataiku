@@ -334,7 +334,11 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "montant_sum": "charge",
+    "sinistre_id_count": "nb_sinistres",
+    "count": "nb_montants"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
