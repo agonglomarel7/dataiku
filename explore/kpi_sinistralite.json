@@ -78,14 +78,132 @@
         "id": "3426107",
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Nouveau graphique",
+        "name": "Moy. de ratio_sp by branche and pays",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
-        "genericDimension1": [],
+        "genericDimension0": [
+          {
+            "numParams": {
+              "mode": "FIXED_NB",
+              "emptyBinsMode": "ZEROS",
+              "binSize": 1.0,
+              "niceBounds": false,
+              "customBinValues": [],
+              "nbBins": 10
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "sort": {
+              "type": "AGGREGATION",
+              "sortId": "ratio_sp AVG 50 NORMAL0 desc",
+              "measureIdx": 0,
+              "label": "Moyenne de ratio_sp, décroissant"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "useLastValueAsTotal": false,
+            "column": "branche",
+            "type": "ALPHANUM"
+          }
+        ],
+        "genericDimension1": [
+          {
+            "numParams": {
+              "mode": "FIXED_NB",
+              "emptyBinsMode": "ZEROS",
+              "binSize": 1.0,
+              "niceBounds": false,
+              "customBinValues": [],
+              "nbBins": 10
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "sort": {
+              "type": "AGGREGATION",
+              "sortId": "ratio_sp AVG 50 NORMAL0 desc",
+              "measureIdx": 0,
+              "label": "Moyenne de ratio_sp, décroissant"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "useLastValueAsTotal": false,
+            "column": "pays",
+            "type": "ALPHANUM"
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "ratio_sp",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "isUnaggregated": false,
+            "uaComputeMode": "STACK",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
+            "showValue": true,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "percentile": 50.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "kpiValueFontSizeMode": "RESPONSIVE",
+            "kpiValueFontSize": 32,
+            "responsiveTextAreaFill": 100,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333333",
+              "hasBackground": false,
+              "fontFamily": "SourceSansPro"
+            },
+            "labelTextFormatting": {
+              "fontSize": 15,
+              "fontColor": "#333333",
+              "hasBackground": false,
+              "fontFamily": "SourceSansPro"
+            },
+            "valuesInChartDisplayOptions": {
+              "displayValues": true,
+              "textFormatting": {
+                "fontSize": 11,
+                "fontColor": "AUTO",
+                "hasBackground": false,
+                "backgroundColor": "#D9D9D9BF"
+              },
+              "addDetails": false,
+              "additionalMeasures": [],
+              "placementMode": "AUTO",
+              "spacing": 2
+            },
+            "colorRules": []
+          }
+        ],
         "genericHierarchyDimension": [],
         "yHierarchyDimension": [],
         "xHierarchyDimension": [],
@@ -135,6 +253,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "xAxisFormatting": {
           "displayAxis": true,
           "displayLineAndTicks": true,
@@ -342,8 +461,13 @@
             "values": [],
             "fixedValues": false
           },
-          "customColors": {}
+          "customColors": {
+            "v_BE": "#1f77b4",
+            "v_FR": "#ff7f0e",
+            "v_LU": "#2ca02c"
+          }
         },
+        "colorGroups": [],
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
@@ -444,8 +568,8 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
         },
         "radarOptions": {
           "filled": false,
@@ -511,6 +635,7 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAC90lEQVR4AezTPWtUQRQG4JndYAp1FyvBIqugWMSwWIr4Byys/AGSwjqFH6CgCxERZC0tbIylYJcoVtvpP1i0sImVYKOFWIS9N0sI3BCG5MzsnTtz3n1DTnK5zMc578NtGf5AJ0BgaF5jCExg8ATAx+MXTGDwBMDH4xdMYPAEwMeb1y8YnLUaj8BVFpBPBIZkrYYicJUF5FMtwL17m9d8CjLJTIeqBbiwZsm07XNJlW1zKdMsINuqBRgymQNDLd3/dL334OOmqB5uPTqwNfkjgaUEtjxlJCU9r6F1BG4o6FTXHAKO38Zw4c2N8ml3JKpB93b8jrBvaBx4P047/S+p6TL+zpJAKuBZeuZejwSyBn7fOX2h/65/tS8sj7nnZmnWwF8XT1yelJNXwjqXg9rqwueL5ZPOlqgGnbXYPWcNHHv4aOdbe9JIKloD1cEErrKAfCIwJGs1FIH3ssD9Q+CEtq/PdK8sbyy/ldTKxsrdkFYJHJJajXusseetoEKvJHBockr2EVgJVGibBA5NTsk+AiuBCm2TwKHJKdlHYCVQoW0eDRx6KvdlkwCBs6GI0wiB4+SazakEzoYiTiMEjpNrNqcSOBuKOI0QOE6u2ZxK4Gwo4jRCYFeuQO8IDITpGoXArlSA3hEYCNM1CoFdqQC9IzAQpmsUArtSAXpHYCBM1ygEdqUC9M4LGGjuuRmFwODUBCYweALg4/ELJjB4AuDj8QsmMHgC4OPxCxYAa15CYM16gt5rAW61y9/GFuuS+mcXvxtrpmuPr7M7k29lUa4L679g3vAlwvl69tdYOt+fsiWeryiKHyHN1wK8/eLWSFp3nn0Y2sHfkaQer20Px6vjkbRCApDs+fny5het89UCLAmJa9IkQOA0uTd2K4EbizrNRQROk3tjtxK4sajTXDQLcJqOeatXAgT2ikvfYgLrM/PqmMBecelbTGB9Zl4dE9grLn2LCazPzKtjAnvFpW8xgf3NVO0gsCou/2YJ7J+Zqh0EVsXl3+wuAAAA///4Qa6mAAAABklEQVQDAB9K4rBkPAZTAAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -597,8 +722,10 @@
             }
           },
           "horizontal": {
-            "show": false,
-            "displayAxis": {},
+            "show": true,
+            "displayAxis": {
+              "type": "LEFT_Y_AXIS"
+            },
             "lineFormatting": {
               "type": "FILLED",
               "color": "#d9d9d9",
