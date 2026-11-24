@@ -65,67 +65,42 @@
   "selectedColumns": [
     {
       "name": "sinistre_id",
-      "type": "string",
       "table": 0
     },
     {
       "name": "contrat_id",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "date_survenance_parsed",
-      "type": "dateonly",
       "table": 0
     },
     {
       "name": "year",
-      "type": "bigint",
-      "table": 0
-    },
-    {
-      "name": "date_survenance_parsed_month",
-      "type": "bigint",
       "table": 0
     },
     {
       "name": "date_declaration",
-      "type": "dateonly",
       "table": 0
     },
     {
       "name": "type_sinistre",
-      "type": "string",
-      "table": 0
-    },
-    {
-      "name": "montant_decimal",
-      "type": "double",
       "table": 0
     },
     {
       "name": "statut",
-      "type": "string",
       "table": 0
     },
     {
       "name": "client_id",
-      "type": "string",
       "table": 0
     },
     {
       "name": "produit_code",
-      "type": "string",
       "table": 0
     },
     {
       "name": "pays",
-      "type": "string",
       "table": 1
     },
     {
       "name": "branche",
-      "type": "string",
       "table": 2
     }
   ],
@@ -179,6 +154,8 @@
         "enabled": false
       },
       "originLabel": "sinistres_contrats",
+      "name": "DATAIKU_N1.sinistres_contrats",
+      "alias": "sinistres_contrats",
       "index": 0,
       "computedColumns": []
     },
@@ -189,6 +166,8 @@
         "enabled": false
       },
       "originLabel": "clients",
+      "name": "DATAIKU_N1.clients",
+      "alias": "clients",
       "index": 1,
       "computedColumns": []
     },
@@ -198,71 +177,12 @@
         "distinct": false,
         "enabled": false
       },
+      "name": "DATAIKU_N1.produits",
+      "alias": "produits",
       "index": 2
     }
   ],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "sinistre_id",
-            "type": "string"
-          },
-          {
-            "name": "contrat_id",
-            "type": "string"
-          },
-          {
-            "name": "date_survenance_parsed",
-            "type": "dateonly"
-          },
-          {
-            "name": "year",
-            "type": "bigint"
-          },
-          {
-            "name": "date_survenance_parsed_month",
-            "type": "bigint"
-          },
-          {
-            "name": "date_declaration",
-            "type": "dateonly"
-          },
-          {
-            "name": "type_sinistre",
-            "type": "string"
-          },
-          {
-            "name": "montant_decimal",
-            "type": "double"
-          },
-          {
-            "name": "statut",
-            "type": "string"
-          },
-          {
-            "name": "client_id",
-            "type": "string",
-            "maxLength": 10
-          },
-          {
-            "name": "produit_code",
-            "type": "string",
-            "maxLength": 10
-          },
-          {
-            "name": "pays",
-            "type": "string"
-          },
-          {
-            "name": "branche",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },
