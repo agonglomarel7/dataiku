@@ -43,10 +43,6 @@
       "table": 0
     },
     {
-      "name": "date_survenance_parsed_year",
-      "table": 0
-    },
-    {
       "name": "date_survenance_parsed_month",
       "table": 0
     },
@@ -126,6 +122,8 @@
       },
       "prefix": "",
       "originLabel": "sinistres_clean",
+      "name": "DATAIKU_N1.sinistres_clean",
+      "alias": "sinistres_clean",
       "index": 0,
       "computedColumns": []
     },
@@ -136,6 +134,8 @@
         "enabled": false
       },
       "originLabel": "contrats",
+      "name": "DATAIKU_N1.contrats",
+      "alias": "contrats",
       "index": 1,
       "computedColumns": []
     }
