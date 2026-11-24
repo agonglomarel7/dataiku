@@ -66,6 +66,8 @@
   "schema": {
     "columns": [
       {"name":"pays","type":"string"},
+      {"name":"branche","type":"string"},
+      {"name":"prime_annuelle_sum","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
