@@ -47,7 +47,7 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "kpi_sinistres_groupes",
+      "objectId": "kpi_sinistres_groupesV1",
       "objectType": "DATASET"
     }
   ],

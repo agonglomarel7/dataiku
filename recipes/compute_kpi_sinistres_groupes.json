@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "kpi_sinistres_groupes",
+          "ref": "kpi_sinistres_groupesV1",
           "appendMode": false
         }
       ]
