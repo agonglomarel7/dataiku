@@ -245,7 +245,10 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "prime_annuelle_sum": "total_primes",
+    "contrat_id_count": "nb_contrat_actifs"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
