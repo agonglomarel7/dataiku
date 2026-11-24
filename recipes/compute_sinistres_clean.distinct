@@ -14,6 +14,9 @@
       "column": "date_survenance_parsed"
     },
     {
+      "column": "year"
+    },
+    {
       "column": "date_survenance_parsed_month"
     },
     {
@@ -82,12 +85,55 @@
         {
           "input": "contrat_id",
           "col": "date_survenance_parsed",
-          "num": 0.0,
+          "num": 0,
           "items": [],
           "operator": "contains",
-          "num2": 0.0
+          "num2": 0
         }
       ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "sinistre_id",
+            "type": "string"
+          },
+          {
+            "name": "contrat_id",
+            "type": "string"
+          },
+          {
+            "name": "date_survenance_parsed",
+            "type": "dateonly"
+          },
+          {
+            "name": "year",
+            "type": "bigint"
+          },
+          {
+            "name": "date_survenance_parsed_month",
+            "type": "bigint"
+          },
+          {
+            "name": "date_declaration",
+            "type": "dateonly"
+          },
+          {
+            "name": "type_sinistre",
+            "type": "string"
+          },
+          {
+            "name": "montant_decimal",
+            "type": "double"
+          },
+          {
+            "name": "statut",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
     },
     "distinct": false,
     "enabled": false
