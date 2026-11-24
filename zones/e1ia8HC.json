@@ -61,6 +61,14 @@
     {
       "objectId": "kpi_sinistres_enrichis_V1_joined_contracts",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "kpi_sinistralite",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_kpi_sinistralite",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
