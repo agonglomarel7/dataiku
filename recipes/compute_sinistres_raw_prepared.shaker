@@ -16,7 +16,7 @@
       },
       {
         "d": true,
-        "name": "date_survenance_parsed_year"
+        "name": "year"
       },
       {
         "d": true,
@@ -193,6 +193,21 @@
         "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "date_survenance_parsed_year",
+            "to": "year"
+          }
+        ]
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -223,14 +238,15 @@
   "analysisColumnData": {},
   "flagNumericValues": true,
   "columnWidthsByName": {
-    "date_survenance_parsed": 180,
-    "date_survenance_parsed_year": 218,
-    "date_survenance_parsed_day": 210,
     "type_sinistre": 183,
+    "year": 100,
     "sinistre_id": 127,
     "montant_decimal": 134,
     "date_survenance_parsed_month": 225,
     "montant": 134,
+    "date_survenance_parsed": 180,
+    "date_survenance_parsed_year": 218,
+    "date_survenance_parsed_day": 210,
     "contrat_id": 120,
     "date_declaration": 162,
     "date_survenance": 155,
