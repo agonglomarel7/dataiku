@@ -6,32 +6,77 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "branche",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "branche",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "pays",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "pays",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "year",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "branche",
+      "type": "string",
       "table": 0
     },
     {
       "name": "pays",
+      "type": "string",
       "table": 0
     },
     {
       "name": "montant_decimal_count",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "count",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "prime_annuelle_sum",
+      "type": "double",
       "table": 1
     }
   ],
@@ -99,5 +144,39 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "year",
+            "type": "bigint"
+          },
+          {
+            "name": "branche",
+            "type": "string"
+          },
+          {
+            "name": "pays",
+            "type": "string"
+          },
+          {
+            "name": "montant_decimal_count",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          },
+          {
+            "name": "prime_annuelle_sum",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
