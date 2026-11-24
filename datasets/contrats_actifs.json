@@ -72,19 +72,8 @@
       {"name":"date_resiliation","type":"dateonly"},
       {"name":"prime_annuelle","type":"double"},
       {"name":"statut","type":"string","maxLength":10},
-      {"name":"civilite","type":"string"},
-      {"name":"prenom","type":"string"},
-      {"name":"nom","type":"string"},
-      {"name":"date_naissance","type":"string"},
       {"name":"pays","type":"string"},
-      {"name":"ville","type":"string"},
-      {"name":"code_postal","type":"string"},
-      {"name":"date_entree","type":"string"},
-      {"name":"canal_acquisition","type":"string"},
-      {"name":"produit_libelle","type":"string"},
-      {"name":"branche","type":"string"},
-      {"name":"prime_base","type":"string"},
-      {"name":"franchise","type":"string"}
+      {"name":"branche","type":"string"}
     ],
     "userModified": true
   },
