@@ -39,18 +39,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_sinistres_retenus",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "sinistres_retenus",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_sinistres_retenus_joined",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "sinistres_retenus_joined",
       "objectType": "DATASET"
     },
