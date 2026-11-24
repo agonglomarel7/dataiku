@@ -78,7 +78,7 @@
         "id": "3426107",
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Moy. de ratio_sp by pays and branche",
+        "name": "Moy. de ratio_sp by pays and year",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
@@ -118,22 +118,22 @@
             "numParams": {
               "mode": "FIXED_NB",
               "emptyBinsMode": "ZEROS",
-              "binSize": 1.0,
+              "binSize": 100.0,
               "niceBounds": false,
               "customBinValues": [],
-              "nbBins": 10
+              "nbBins": 5
             },
-            "maxValues": 20,
+            "maxValues": 100,
             "generateOthersCategory": true,
             "forceLastPositionOthers": false,
             "oneTickPerBin": "AUTO",
             "filters": [],
             "isA": "dimension",
             "sort": {
-              "type": "AGGREGATION",
-              "sortId": "ratio_sp AVG 50 NORMAL0 desc",
-              "measureIdx": 0,
-              "label": "Moyenne de ratio_sp, décroissant"
+              "type": "NATURAL",
+              "sortId": "NATURAL",
+              "label": "Ordonnancement naturel",
+              "sortAscending": true
             },
             "multiplier": "Auto",
             "hideTrailingZeros": true,
@@ -141,8 +141,8 @@
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
             "useLastValueAsTotal": false,
-            "column": "branche",
-            "type": "ALPHANUM"
+            "column": "year",
+            "type": "NUMERICAL"
           }
         ],
         "facetDimension": [],
@@ -461,10 +461,7 @@
             "values": [],
             "fixedValues": false
           },
-          "customColors": {
-            "v_Habitation": "#1f77b4",
-            "v_Auto": "#ff7f0e"
-          }
+          "customColors": {}
         },
         "colorGroups": [],
         "bubblesOptions": {
@@ -634,7 +631,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAADCklEQVR4AeyWP2sUQRjGZw9Bq0hIp+RErf0AioXl+bdJYaMBCwMWlppYaGLgIGKniJVfwcZEG6s0gXyAdGmSMlWS6gK5zTKTYyHMZN+Z7B4zzz7HvbPL3Dszz/P8GLiO4gc6AQKGxqsUARMweALg9niDCRg8AXB7vMEEDJ4AuL223mBwrKU9Ai6zgHwjYEispakgwN2F1UmfKo/j27gTCAKscvUiy9VvSamhmh+3KZ5XJhAGuFxf+fa0s3EtX7zal1blhmzwSqBxwKdq7hVPSd0t+vitMYFxAa5RMrfySQAG8PS7v7e779cWpXX9w/8pn6BS7T0DOFUbRneW5Q+kZVbgj1CA8XH5OyRg/8ySWtFawJuX557nSxOzovo08TCUandh7eeN+dVfkir+P7wMPce1rrWAp4aHPZVnr0TlSk8+f6tolVTRVu+3tYDrjTHe3Qg4Xja1KCPgWmKMdxMC1mziGGay9en84+QdaUlUE7AkpTH13L+0dVN1ht9kdTwnkUXAkpQS7iHghOFJpBOwJKWEewg4YXgS6QQsSSnhHgJOGJ5EOgFLUkq453zACRujdJMAAZscYEcChkVrjBGwyQF2JGBYtMYYAZscYEcChkVrjBGwyQF2JGAbWqA5AgaCabNCwLZUgOYIGAimzQoB21IBmiNgIJg2KwRsSwVojoCBYNqsELAtFaA5L8BAvltjhYDBURMwAYMnAG6PN5iAwRMAt8cbTMDgCYDb4w0WAE65hYBTpifQHgw4V2ogKa0hUwMlqyPdHzhI9Ix69BEyTQPde4FhdGbVUx9Rs6YgwDtfnnwvqiepHyv92WxpvyctbTJg2P36aFuiZ9RzZXnvmVRTtnzwL0CSXrKz8vjN6Myq50z/z2uxps8Hb/UBFUMQ4Io9+XNECRBwRDCakELATaQa0Z4EHBGMJqQQcBOpRrTnRQBHZINSXAkQsCsZkHkCBgHpskHArmRA5gkYBKTLBgG7kgGZJ2AQkC4bBOxKBmSegP1BJrWCgJPC5S+WgP0zS2oFASeFy1/sCQAAAP//GuG9MQAAAAZJREFUAwCS7aewKjaYEAAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAADLUlEQVR4AeyTy2oUQRSGqyeiEXEpLrzgI7hzF4yDGweXLnRlNiPiBReaLN0mWYkaMG4SXLhwKRlBZBR8khh05QsEculQTZqp7lQqVT19pk+d/gdOT11OnTr//1EdhZ9oBwBYNF6lABiAhTsgXB5eMAALd0C4PLxgABbugHB5bX3BwrGO5AHwyAuRIwAWiXUkqlHA7/o/H6z0h6/NWHv4a3rUHkbjOtAoYN18miQ3zdBriPocaBxwfVJQyeYAANtcEbQGwIJg2qQAcMmVt3O/L9iilBbNtAQ4mr5JG+2c3v1SiDN7N0gvJCwOwITmcigNwBwoEPYAwITmcihdCfDFl9/PlUOpNOEgCD0UHagE+Oyp3XvTUzsbZhTLYla3AyuPhm/e94ef8tBznzsqAfYpjBwCB5LkisrDszwAexoVaxoAZ+TkfgBYLttMmRjAl+a/Xb66MPhaiPnB7Uxliz9iAGuGiUrPm6HX2h6iALcdpk0/ANtcqXHt2qvB/XLUWP7EUgB8okXjJexPqZm0k/bzUB11XU3wB8ATNLuJqwC4CdcneKcb8AQbwVU0DgAwja9sqgIwGxQ0jQAwja9sqgIwGxQ0jQAwja9sqgIwGxQ0jQAwja9sqgKwDYWgNQAWBNMmBYBtrghaA2BBMG1SANjmiqA1ABYE0yYFgG2uCFoDYEEwbVIA2OaKoLUgwIJ0t0YKAAtHDcAALNwB4fLwggFYuAPC5eEFA7BwB4TLwwv2ABxzCgDHTM+j9zEAp/tKmeFxmzXFrKHH1iTPRX3eDM9jR9LMGnp8JCFwQdfII/BoIT2vof8LG8dOKgHeXOyt/1m62zVDqSRVgb9nH299frra7Zoxtz67HVgmS/+3fOev2Y8eby33fmSbAZ/nazP/zX6y8YfZjYAShdStxd5j3Usem0u9hUKC5+TJavdF1suhX3ruc7QSYJ/CyOHhAADz4EDWBQCTWcujMADz4EDWBQCTWcuj8DiAeShAF04HANhpT/ybABw/Q6cCAHbaE/8mAMfP0KkAgJ32xL8JwPEzdCoAYKc98W8CcDjDqE4AcFS4wpsF4HDPojoBwFHhCm/2AAAA///F8fgBAAAABklEQVQDAB/jy6GcY9+lAAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
