@@ -257,7 +257,27 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "NUMERICAL_FACET",
+            "filterSelectionType": "RANGE_OF_VALUES",
+            "id": "1795531573803_3",
+            "column": "year",
+            "label": "DRILLED DOWN \u003e year: 2,024-2,024.2",
+            "columnType": "NUMERICAL",
+            "minValue": 2024.0,
+            "maxValue": 2024.2,
+            "isA": "filter",
+            "isAGlobalFilter": false,
+            "useMinimalUi": true,
+            "isDrill": true,
+            "axisName": "color",
+            "excludeOtherValues": true,
+            "allValuesInSample": false,
+            "active": true,
+            "includeEmptyValues": false
+          }
+        ],
         "xAxisFormatting": {
           "displayAxis": true,
           "displayLineAndTicks": true,
@@ -637,7 +657,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAADLUlEQVR4AeyTy2oUQRSGqyeiEXEpLrzgI7hzF4yDGweXLnRlNiPiBReaLN0mWYkaMG4SXLhwKRlBZBR8khh05QsEculQTZqp7lQqVT19pk+d/gdOT11OnTr//1EdhZ9oBwBYNF6lABiAhTsgXB5eMAALd0C4PLxgABbugHB5bX3BwrGO5AHwyAuRIwAWiXUkqlHA7/o/H6z0h6/NWHv4a3rUHkbjOtAoYN18miQ3zdBriPocaBxwfVJQyeYAANtcEbQGwIJg2qQAcMmVt3O/L9iilBbNtAQ4mr5JG+2c3v1SiDN7N0gvJCwOwITmcigNwBwoEPYAwITmcihdCfDFl9/PlUOpNOEgCD0UHagE+Oyp3XvTUzsbZhTLYla3AyuPhm/e94ef8tBznzsqAfYpjBwCB5LkisrDszwAexoVaxoAZ+TkfgBYLttMmRjAl+a/Xb66MPhaiPnB7Uxliz9iAGuGiUrPm6HX2h6iALcdpk0/ANtcqXHt2qvB/XLUWP7EUgB8okXjJexPqZm0k/bzUB11XU3wB8ATNLuJqwC4CdcneKcb8AQbwVU0DgAwja9sqgIwGxQ0jQAwja9sqgIwGxQ0jQAwja9sqgIwGxQ0jQAwja9sqgKwDYWgNQAWBNMmBYBtrghaA2BBMG1SANjmiqA1ABYE0yYFgG2uCFoDYEEwbVIA2OaKoLUgwIJ0t0YKAAtHDcAALNwB4fLwggFYuAPC5eEFA7BwB4TLwwv2ABxzCgDHTM+j9zEAp/tKmeFxmzXFrKHH1iTPRX3eDM9jR9LMGnp8JCFwQdfII/BoIT2vof8LG8dOKgHeXOyt/1m62zVDqSRVgb9nH299frra7Zoxtz67HVgmS/+3fOev2Y8eby33fmSbAZ/nazP/zX6y8YfZjYAShdStxd5j3Usem0u9hUKC5+TJavdF1suhX3ruc7QSYJ/CyOHhAADz4EDWBQCTWcujMADz4EDWBQCTWcuj8DiAeShAF04HANhpT/ybABw/Q6cCAHbaE/8mAMfP0KkAgJ32xL8JwPEzdCoAYKc98W8CcDjDqE4AcFS4wpsF4HDPojoBwFHhCm/2AAAA///F8fgBAAAABklEQVQDAB/jy6GcY9+lAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAACXklEQVR4AezYP07DMBTH8bQHoayIkQtwgq5cAQnmwsYKiJkZrsCfXoKZC8AZGJvSvCUSskni5qn2r99Ktioncd77feQl04qfdAIAS/NWFcAAiycg3h4nGGDxBMTb4wQDLJ6AeHv7eoLFWdv2AG6zkPwHsCRr2xTAbRaS/5KADxbvN7PF24PHkEx5h00lAVu9k+qkGn/MbG+m0RJIBx6tBDbyTABgz3Qz2BvgDBA8S/gD7Pkq9t5FAjLAB1cvx4fXyzOf8Xq6C5wx3ikD3ISxXtfnHqPZu9QhBVwqgmfdAHumm8HeADsjbL72HXmNPqUD3Celbe6ZVpebL36P44/JRZ+yAO6TUsH3AGx4uhPAurbWGcAWg+4EsK6tdQawxaA7Aaxra50BbDHoTgDr2lpnAFsMutP/wLp9701nAItTAwyweALi7XGCARZPQLw9TjDA4gmIt8cJDgELrQEshBlqBeBQKkJrAAthhloBOJSK0BrAQpihVgAOpSK0BrAQZqgVgEOpCK0NAhbqe29aAVicGmCAxRMQb48TDLB4AuLtcYIBFk9AvD1OcA/gkm8BuGS9HrUnAa+nq2U9qRcO475HzdFbHOqxHlfV+if60o4LdVU/+dS1eu54tV1OAv6+nX94DasqYfq6m3961dTsm1CSPdI86zXsBR1TEnDHnlzOKAGAM8LwKAVgj1Qz2hPgjDA8SgHYI9WM9twGOKM2KCWWAMCxZETWARaBjLUBcCwZkXWARSBjbQAcS0ZkHWARyFgbAMeSEVkHeDhkUU8AXBTX8GIBHp5ZUU8AXBTX8GJ/AQAA///LRMy5AAAABklEQVQDALuzKb+kkdNKAAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
