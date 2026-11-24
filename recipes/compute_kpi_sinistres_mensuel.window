@@ -299,5 +299,8 @@
   "rank": false,
   "denseRank": false,
   "rowNumber": false,
-  "outputColumnNameOverrides": {}
+  "outputColumnNameOverrides": {
+    "nb_sinistres_lag_diff": "nb_sinistres_-mois_prec",
+    "charge_sum": "charge_cumulee"
+  }
 }
