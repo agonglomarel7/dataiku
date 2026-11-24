@@ -72,8 +72,8 @@
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
       {"name":"nb_montants","type":"bigint"},
-      {"name":"nb_sinistres_lag_diff","type":"bigint"},
-      {"name":"charge_sum","type":"double"}
+      {"name":"nb_sinistres_-mois_prec","type":"bigint"},
+      {"name":"charge_cumulee","type":"double"}
     ],
     "userModified": true
   },
