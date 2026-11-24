@@ -78,42 +78,10 @@
         "id": "3426107",
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Moy. de ratio_sp by branche and pays",
+        "name": "Moy. de ratio_sp by pays",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
-          {
-            "numParams": {
-              "mode": "FIXED_NB",
-              "emptyBinsMode": "ZEROS",
-              "binSize": 1.0,
-              "niceBounds": false,
-              "customBinValues": [],
-              "nbBins": 10
-            },
-            "maxValues": 20,
-            "generateOthersCategory": true,
-            "forceLastPositionOthers": false,
-            "oneTickPerBin": "AUTO",
-            "filters": [],
-            "isA": "dimension",
-            "sort": {
-              "type": "AGGREGATION",
-              "sortId": "ratio_sp AVG 50 NORMAL0 desc",
-              "measureIdx": 0,
-              "label": "Moyenne de ratio_sp, décroissant"
-            },
-            "multiplier": "Auto",
-            "hideTrailingZeros": true,
-            "digitGrouping": "DEFAULT",
-            "useParenthesesForNegativeValues": false,
-            "shouldFormatInPercentage": false,
-            "useLastValueAsTotal": false,
-            "column": "branche",
-            "type": "ALPHANUM"
-          }
-        ],
-        "genericDimension1": [
           {
             "numParams": {
               "mode": "FIXED_NB",
@@ -145,8 +113,40 @@
             "type": "ALPHANUM"
           }
         ],
+        "genericDimension1": [],
         "facetDimension": [],
-        "animationDimension": [],
+        "animationDimension": [
+          {
+            "numParams": {
+              "mode": "FIXED_NB",
+              "emptyBinsMode": "ZEROS",
+              "binSize": 1.0,
+              "niceBounds": false,
+              "customBinValues": [],
+              "nbBins": 10
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "sort": {
+              "type": "AGGREGATION",
+              "sortId": "ratio_sp AVG 50 NORMAL0 desc",
+              "measureIdx": 0,
+              "label": "Moyenne de ratio_sp, décroissant"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "useLastValueAsTotal": false,
+            "column": "branche",
+            "type": "ALPHANUM"
+          }
+        ],
         "genericMeasures": [
           {
             "column": "ratio_sp",
@@ -440,7 +440,7 @@
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
-        "animationFrameDuration": 3000,
+        "animationFrameDuration": 1000,
         "animationRepeat": true,
         "colorMode": "UNIQUE_SCALE",
         "colorOptions": {
@@ -462,9 +462,7 @@
             "fixedValues": false
           },
           "customColors": {
-            "v_BE": "#1f77b4",
-            "v_FR": "#ff7f0e",
-            "v_LU": "#2ca02c"
+            "m_ratio_sp_AVG_1": "#1f77b4"
           }
         },
         "colorGroups": [],
@@ -635,7 +633,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAC90lEQVR4AezTPWtUQRQG4JndYAp1FyvBIqugWMSwWIr4Byys/AGSwjqFH6CgCxERZC0tbIylYJcoVtvpP1i0sImVYKOFWIS9N0sI3BCG5MzsnTtz3n1DTnK5zMc578NtGf5AJ0BgaF5jCExg8ATAx+MXTGDwBMDH4xdMYPAEwMeb1y8YnLUaj8BVFpBPBIZkrYYicJUF5FMtwL17m9d8CjLJTIeqBbiwZsm07XNJlW1zKdMsINuqBRgymQNDLd3/dL334OOmqB5uPTqwNfkjgaUEtjxlJCU9r6F1BG4o6FTXHAKO38Zw4c2N8ml3JKpB93b8jrBvaBx4P047/S+p6TL+zpJAKuBZeuZejwSyBn7fOX2h/65/tS8sj7nnZmnWwF8XT1yelJNXwjqXg9rqwueL5ZPOlqgGnbXYPWcNHHv4aOdbe9JIKloD1cEErrKAfCIwJGs1FIH3ssD9Q+CEtq/PdK8sbyy/ldTKxsrdkFYJHJJajXusseetoEKvJHBockr2EVgJVGibBA5NTsk+AiuBCm2TwKHJKdlHYCVQoW0eDRx6KvdlkwCBs6GI0wiB4+SazakEzoYiTiMEjpNrNqcSOBuKOI0QOE6u2ZxK4Gwo4jRCYFeuQO8IDITpGoXArlSA3hEYCNM1CoFdqQC9IzAQpmsUArtSAXpHYCBM1ygEdqUC9M4LGGjuuRmFwODUBCYweALg4/ELJjB4AuDj8QsmMHgC4OPxCxYAa15CYM16gt5rAW61y9/GFuuS+mcXvxtrpmuPr7M7k29lUa4L679g3vAlwvl69tdYOt+fsiWeryiKHyHN1wK8/eLWSFp3nn0Y2sHfkaQer20Px6vjkbRCApDs+fny5het89UCLAmJa9IkQOA0uTd2K4EbizrNRQROk3tjtxK4sajTXDQLcJqOeatXAgT2ikvfYgLrM/PqmMBecelbTGB9Zl4dE9grLn2LCazPzKtjAnvFpW8xgf3NVO0gsCou/2YJ7J+Zqh0EVsXl3+wuAAAA///4Qa6mAAAABklEQVQDAB9K4rBkPAZTAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAABmElEQVR4AezTQYoEIRREwWbuf+gBN8Kgg0WvfBW9ELFsMDP4Px+/dAOA07yfD2DA8Qbi8Uww4HgD8XgmGHC8gXi8t05wnHXGAzy7SO4AJ1lnKMCzi+QOcJJ1hgI8u0juACdZZyjAs4vkDnCSdYb6Azw/2DUaANxw3KYAvK2m8QFww3GbAvC2msYHwA3HbQrA22oaHwA3HLcpAI9qugvgru1IBnjU0F0Ad21HMsCjhu4CuGs7kgEeNXQXwF3bkQzwqKG7/A/czf2aZIDj1IABxxuIxzPBgOMNxOOZYMDxBuLxTPAKOHQGOIS5igJ41UroDHAIcxUF8KqV0BngEOYqCuBVK6EzwCHMVRTAq1ZCZ4+AQ7lfEwVwnBow4HgD8XgmGHC8gXg8Eww43kA8ngk+AL75CuCb9Q7eDvigpJuvAL5Z7+DtgA9KuvkK4Jv1Dt4O+KCkm68Avlnv4O2AD0q6+co3wDfnfs3bAcepAQOONxCPZ4IBxxuIxzPBgOMNxOOZ4OfAV/0D8FVczx8L+HlnV/0D8FVczx/7CwAA//9QPGQEAAAABklEQVQDAChwAKEmxBeRAAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
