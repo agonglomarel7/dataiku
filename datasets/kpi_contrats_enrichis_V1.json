@@ -66,6 +66,9 @@
   "schema": {
     "columns": [
       {"name":"branche","type":"string"},
+      {"name":"pays","type":"string"},
+      {"name":"contrat_id_count","type":"bigint"},
+      {"name":"prime_annuelle_sum","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
