@@ -69,6 +69,7 @@
       {"name":"branche","type":"string"},
       {"name":"pays","type":"string"},
       {"name":"sinistre_id_count","type":"bigint"},
+      {"name":"montant_sum","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
