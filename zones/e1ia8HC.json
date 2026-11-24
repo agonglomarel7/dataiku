@@ -43,20 +43,8 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_kpi_sinistres_groupes",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "kpi_sinistres_groupesV1",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "kpi_sinistres_groupes",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_kpi_sinistres_groupes_1",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
