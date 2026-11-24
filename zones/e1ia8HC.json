@@ -45,6 +45,14 @@
     {
       "objectId": "kpi_sinistres_groupes",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_kpi_sinistres_enrichis_V1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "kpi_sinistres_enrichis_V1",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
