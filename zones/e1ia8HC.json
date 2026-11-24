@@ -37,6 +37,14 @@
     {
       "objectId": "sinistres_enrichis",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sinistres_retenus",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sinistres_retenus",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
