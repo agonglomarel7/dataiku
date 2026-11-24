@@ -1,0 +1,143 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "contrat_id",
+      "table": 0
+    },
+    {
+      "name": "client_id",
+      "table": 0
+    },
+    {
+      "name": "produit_code",
+      "table": 0
+    },
+    {
+      "name": "date_effet",
+      "table": 0
+    },
+    {
+      "name": "date_resiliation",
+      "table": 0
+    },
+    {
+      "name": "prime_annuelle",
+      "table": 0
+    },
+    {
+      "name": "statut",
+      "table": 0
+    },
+    {
+      "name": "civilite",
+      "table": 1
+    },
+    {
+      "name": "prenom",
+      "table": 1
+    },
+    {
+      "name": "nom",
+      "table": 1
+    },
+    {
+      "name": "date_naissance",
+      "table": 1
+    },
+    {
+      "name": "pays",
+      "table": 1
+    },
+    {
+      "name": "ville",
+      "table": 1
+    },
+    {
+      "name": "code_postal",
+      "table": 1
+    },
+    {
+      "name": "date_entree",
+      "table": 1
+    },
+    {
+      "name": "canal_acquisition",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "cdePipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "contrats",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "clients",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
