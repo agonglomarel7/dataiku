@@ -68,7 +68,6 @@
       {"name":"year","type":"bigint"},
       {"name":"branche","type":"string"},
       {"name":"pays","type":"string"},
-      {"name":"month","type":"bigint"},
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
       {"name":"nb_montants","type":"bigint"},
