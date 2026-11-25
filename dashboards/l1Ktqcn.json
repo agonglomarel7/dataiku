@@ -3,7 +3,56 @@
     {
       "id": "F3DchXB",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "7cf2e5aa-d027-4558-b9be-c6cee535947b",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "box": {
+              "left": 0,
+              "top": 0,
+              "width": 12,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "5aoEwUd",
+            "insightType": "chart"
+          }
+        ]
       },
       "show": true,
       "showTitle": false,
