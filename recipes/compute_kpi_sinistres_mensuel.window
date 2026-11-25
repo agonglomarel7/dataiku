@@ -5,7 +5,6 @@
   },
   "ntileValues": "10",
   "retrievedColumnsSelectionMode": "ALL",
-  "keys": [],
   "values": [
     {
       "last": false,
@@ -14,11 +13,9 @@
       "firstLastNotNull": false,
       "column": "year",
       "count": false,
-      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -39,11 +36,9 @@
       "firstLastNotNull": false,
       "column": "branche",
       "count": false,
-      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -64,11 +59,9 @@
       "firstLastNotNull": false,
       "column": "pays",
       "count": false,
-      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -77,26 +70,6 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
-      "stddev": false,
-      "value": true,
-      "leadDiff": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "lagDiff": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "month",
-      "count": false,
-      "$idx": 3,
-      "sum": false,
-      "concat": false,
-      "type": "bigint",
-      "lead": false,
-      "min": false,
-      "avg": false,
-      "lag": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -109,11 +82,9 @@
       "firstLastNotNull": false,
       "column": "nb_sinistres",
       "count": false,
-      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -122,7 +93,6 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
-      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -135,11 +105,9 @@
       "firstLastNotNull": false,
       "column": "charge",
       "count": false,
-      "$idx": 5,
       "lagValues": "1",
       "sum": true,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -148,7 +116,6 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
-      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -161,11 +128,9 @@
       "firstLastNotNull": false,
       "column": "nb_montants",
       "count": false,
-      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -184,20 +149,15 @@
   "windows": [
     {
       "windowLimitMode": "ROWS",
-      "windowUpperBound": 0,
+      "windowUpperBound": 0.0,
       "enablePartitioning": true,
       "enableOrdering": true,
       "precedingRows": 0,
       "limitFollowing": false,
-      "orders": [
-        {
-          "column": "month",
-          "desc": false
-        }
-      ],
+      "orders": [],
       "limitPreceding": false,
       "followingRows": 0,
-      "windowLowerBound": 0,
+      "windowLowerBound": 0.0,
       "enableLimits": false,
       "partitioningColumns": [
         "year",
@@ -207,49 +167,6 @@
   ],
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "year",
-            "type": "bigint"
-          },
-          {
-            "name": "branche",
-            "type": "string"
-          },
-          {
-            "name": "pays",
-            "type": "string"
-          },
-          {
-            "name": "month",
-            "type": "bigint"
-          },
-          {
-            "name": "nb_sinistres",
-            "type": "bigint"
-          },
-          {
-            "name": "charge",
-            "type": "double"
-          },
-          {
-            "name": "nb_montants",
-            "type": "bigint"
-          },
-          {
-            "name": "nb_sinistres_lag_diff",
-            "type": "bigint"
-          },
-          {
-            "name": "charge_sum",
-            "type": "double"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },
@@ -298,9 +215,9 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false,
   "outputColumnNameOverrides": {
     "nb_sinistres_lag_diff": "nb_sinistres_-mois_prec",
     "charge_sum": "charge_cumulee"
-  }
+  },
+  "rowNumber": false
 }
