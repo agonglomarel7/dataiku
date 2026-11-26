@@ -68,7 +68,7 @@
       {"name":"month","type":"bigint"},
       {"name":"branche","type":"string"},
       {"name":"year","type":"bigint"},
-      {"name":"sinistre_id_count","type":"bigint"},
+      {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
       {"name":"count","type":"bigint"},
       {"name":"sinistre_id_count_lag_diff","type":"bigint"},
