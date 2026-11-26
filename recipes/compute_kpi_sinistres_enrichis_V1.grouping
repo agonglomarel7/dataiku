@@ -225,7 +225,7 @@
       "column": "montant",
       "count": false,
       "$idx": 6,
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "double",
       "mode": false,
@@ -233,7 +233,7 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
       "$selected": false,
       "stddev": false,
@@ -392,7 +392,7 @@
             "type": "bigint"
           },
           {
-            "name": "montant_sum",
+            "name": "montant_avg",
             "type": "double"
           },
           {
