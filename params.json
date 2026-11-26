@@ -205,6 +205,7 @@
     }
   },
   "name": "dev",
+  "imgPattern": 6,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -260,6 +261,7 @@
       "checks": []
     }
   },
+  "description": "Ce projet consiste à concevoir et mettre en œuvre un pipeline de données pour Alpenia Assurances, dans un environnement Dataiku.\n\nL\u0027objectif est d\u0027ingérer des données provenant de plusieurs systèmes sources, de les stocker, d\u0027effectuer des premières transformations avec recipe, puis de réaliser des analyses métier.\n\nLe projet permet également de découvrir les mécanismes de gestion des données de Delta Lake, notamment le versionnement, l\u0027historique des opérations et la restauration des données.",
   "shortDesc": "The project *Dataiku\u0026#95;N1*  was created by marel\u0026#46;agonglo on Nov 19th 2026\nThe project *DEV* was copied from *DATAIKU_N1* by marel.agonglo on Nov 26th 2026",
   "creationTag": {
     "versionNumber": 0,
