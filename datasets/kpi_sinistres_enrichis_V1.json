@@ -70,7 +70,7 @@
       {"name":"pays","type":"string"},
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
-      {"name":"nb_montants","type":"bigint"}
+      {"name":"count","type":"bigint"}
     ],
     "userModified": true
   },
