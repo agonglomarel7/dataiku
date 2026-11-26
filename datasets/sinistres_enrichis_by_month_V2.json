@@ -66,6 +66,8 @@
   "schema": {
     "columns": [
       {"name":"month","type":"bigint"},
+      {"name":"branche","type":"string"},
+      {"name":"year","type":"bigint"},
       {"name":"sinistre_id_count","type":"bigint"},
       {"name":"montant_sum","type":"double"},
       {"name":"count","type":"bigint"}
