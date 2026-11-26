@@ -11,14 +11,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "kpi_sinistres_mensuel",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_kpi_sinistres_mensuel",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "kpi_sinistres_enrichis_V1_joined_contracts",
       "objectType": "DATASET"
     },
