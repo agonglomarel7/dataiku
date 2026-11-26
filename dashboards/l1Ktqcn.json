@@ -66,6 +66,72 @@
         "panelPosition": "TOP",
         "engineType": "LINO"
       }
+    },
+    {
+      "id": "J5r13Fj",
+      "grid": {
+        "tiles": [
+          {
+            "displayMode": "INSIGHT",
+            "clickAction": "DO_NOTHING",
+            "resizeImageMode": "FIT_SIZE",
+            "id": "d61f0f0f-a52e-4543-92c8-11190fe1bdd6",
+            "tileType": "INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showXAxisTitle": true,
+              "showYAxis": true,
+              "showYAxisTitle": true,
+              "showLegend": false,
+              "showBrush": false,
+              "showBreadcrumb": true,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true,
+              "disableHierarchyDrillDown": false,
+              "useInsightTheme": false
+            },
+            "box": {
+              "left": 0,
+              "top": 0,
+              "width": 12,
+              "height": 12
+            },
+            "useDashboardSpacing": true,
+            "tileSpacing": 8,
+            "padding": 0,
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000000",
+              "fontSize": 13
+            },
+            "borderOptions": {
+              "color": "#CCCCCC",
+              "radius": 0,
+              "size": 1
+            },
+            "backgroundColor": "#ffffff",
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "isDisplacing": false,
+            "insightId": "vH8nDDc",
+            "insightType": "chart"
+          }
+        ]
+      },
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#FFFFFF",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      }
     }
   ],
   "owner": "marel.agonglo@freelanceclubs.com",
