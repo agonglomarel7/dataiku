@@ -49,7 +49,20 @@
     "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "agonglomarel7",
+              "accessToken": "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",
+              "repository": "agonglomarel7/dataiku"
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
