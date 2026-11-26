@@ -9,6 +9,14 @@
     {
       "objectId": "compute_kpi_sinistralite",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "kpi_sinistres_mensuel",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_kpi_sinistres_mensuel",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
