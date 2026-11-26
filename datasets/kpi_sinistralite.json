@@ -70,6 +70,7 @@
       {"name":"pays","type":"string"},
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"montant_avg","type":"double"},
+      {"name":"charge","type":"double"},
       {"name":"nb_contrat_actifs","type":"bigint"},
       {"name":"frequence","type":"double"},
       {"name":"total_primes","type":"double"},
