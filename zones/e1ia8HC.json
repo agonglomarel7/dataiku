@@ -3,14 +3,6 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "compute_sinistres_contrats_joined",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "sinistres_enrichis",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "sinistres_retenus_joined",
       "objectType": "DATASET"
     },

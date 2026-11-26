@@ -9,6 +9,14 @@
     {
       "objectId": "compute_sinistres_clean_joined",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sinistres_enrichis",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sinistres_contrats_joined",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
