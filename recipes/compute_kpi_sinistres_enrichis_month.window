@@ -265,5 +265,7 @@
   "rank": false,
   "denseRank": false,
   "rowNumber": false,
-  "outputColumnNameOverrides": {}
+  "outputColumnNameOverrides": {
+    "sinistre_id_count": "nb_sinistres"
+  }
 }
