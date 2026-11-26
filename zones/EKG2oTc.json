@@ -5,6 +5,10 @@
     {
       "objectId": "produits",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "clients",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

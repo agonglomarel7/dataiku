@@ -1,12 +1,7 @@
 {
   "name": "Clients",
   "color": "#4B8021",
-  "items": [
-    {
-      "objectId": "clients",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {
     "x": 16.0,
