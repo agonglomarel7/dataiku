@@ -3,14 +3,6 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "sinistres_raw_prepared",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_sinistres_raw_prepared",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_sinistres_clean",
       "objectType": "RECIPE"
     },

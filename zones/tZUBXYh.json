@@ -1,7 +1,16 @@
 {
   "name": "2_Nettoyage",
   "color": "#F9BE40",
-  "items": [],
+  "items": [
+    {
+      "objectId": "sinistres_raw_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sinistres_raw_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
