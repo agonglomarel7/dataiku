@@ -27,9 +27,9 @@
     },
     "def": {
       "id": "dc41d589",
-      "type": "grouped_columns",
+      "type": "lines",
       "variant": "normal",
-      "name": "Moy. de nb_sinistres by month",
+      "name": "Moy. de nb_sinistres by month and branche",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [
@@ -54,6 +54,8 @@
             "label": "Ordonnancement naturel",
             "sortAscending": true
           },
+          "prefix": "",
+          "suffix": "",
           "multiplier": "Auto",
           "hideTrailingZeros": true,
           "digitGrouping": "DEFAULT",
@@ -64,8 +66,70 @@
           "type": "NUMERICAL"
         }
       ],
-      "genericDimension1": [],
-      "facetDimension": [],
+      "genericDimension1": [
+        {
+          "numParams": {
+            "mode": "FIXED_NB",
+            "emptyBinsMode": "ZEROS",
+            "binSize": 1.0,
+            "niceBounds": false,
+            "customBinValues": [],
+            "nbBins": 10
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "forceLastPositionOthers": false,
+          "oneTickPerBin": "AUTO",
+          "filters": [],
+          "isA": "dimension",
+          "sort": {
+            "type": "AGGREGATION",
+            "sortId": "nb_sinistres AVG 50 NORMAL0 desc",
+            "measureIdx": 0,
+            "label": "Moyenne de nb_sinistres, décroissant"
+          },
+          "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "useLastValueAsTotal": false,
+          "column": "branche",
+          "type": "ALPHANUM"
+        }
+      ],
+      "facetDimension": [
+        {
+          "numParams": {
+            "mode": "NONE",
+            "emptyBinsMode": "ZEROS",
+            "binSize": 100.0,
+            "niceBounds": false,
+            "customBinValues": [],
+            "nbBins": 30
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "forceLastPositionOthers": false,
+          "oneTickPerBin": "AUTO",
+          "filters": [],
+          "isA": "dimension",
+          "sort": {
+            "type": "NATURAL",
+            "sortId": "NATURAL",
+            "label": "Ordonnancement naturel",
+            "sortAscending": true
+          },
+          "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "useLastValueAsTotal": false,
+          "column": "year",
+          "type": "NUMERICAL"
+        }
+      ],
       "animationDimension": [],
       "genericMeasures": [
         {
@@ -382,7 +446,8 @@
           "fixedValues": false
         },
         "customColors": {
-          "m_nb_sinistres_AVG_1": "#1f77b4"
+          "v_Auto": "#1f77b4",
+          "v_Habitation": "#ff7f0e"
         }
       },
       "colorGroups": [],
