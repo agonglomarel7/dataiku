@@ -160,7 +160,7 @@
   "windows": [
     {
       "windowUpperBound": 0,
-      "enablePartitioning": false,
+      "enablePartitioning": true,
       "enableOrdering": false,
       "precedingRows": 0,
       "limitFollowing": false,
@@ -168,7 +168,11 @@
       "limitPreceding": false,
       "followingRows": 0,
       "windowLowerBound": 0,
-      "enableLimits": false
+      "enableLimits": false,
+      "partitioningColumns": [
+        "month",
+        "branche"
+      ]
     }
   ],
   "computedColumns": [],
