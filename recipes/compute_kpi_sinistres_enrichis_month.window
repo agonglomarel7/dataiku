@@ -90,7 +90,7 @@
       "column": "sinistre_id_count",
       "count": false,
       "$idx": 3,
-      "lagValues": "1",
+      "lagValues": "2",
       "sum": false,
       "concat": false,
       "type": "bigint",
@@ -102,7 +102,7 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
-      "$selected": false,
+      "$selected": true,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -205,7 +205,7 @@
             "type": "bigint"
           },
           {
-            "name": "sinistre_id_count_lag_diff",
+            "name": "sinistre_id_count_lag_diff2",
             "type": "bigint"
           },
           {
