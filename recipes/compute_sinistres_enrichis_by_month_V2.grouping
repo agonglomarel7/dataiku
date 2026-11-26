@@ -210,7 +210,7 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
       "$selected": false,
       "stddev": false,
@@ -373,6 +373,10 @@
           {
             "name": "sinistre_id_count",
             "type": "bigint"
+          },
+          {
+            "name": "montant_avg",
+            "type": "double"
           },
           {
             "name": "montant_sum",
