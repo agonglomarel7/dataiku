@@ -29,13 +29,13 @@
       "id": "dc41d589",
       "type": "grouped_columns",
       "variant": "normal",
-      "name": "Moy. de month by nb_sinistres",
+      "name": "Moy. de nb_sinistres by month",
       "userEditedName": false,
       "displayWithEChartsByDefault": true,
       "genericDimension0": [
         {
           "numParams": {
-            "mode": "FIXED_NB",
+            "mode": "NONE",
             "emptyBinsMode": "ZEROS",
             "binSize": 100.0,
             "niceBounds": false,
@@ -60,7 +60,7 @@
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
           "useLastValueAsTotal": false,
-          "column": "nb_sinistres",
+          "column": "month",
           "type": "NUMERICAL"
         }
       ],
@@ -69,7 +69,7 @@
       "animationDimension": [],
       "genericMeasures": [
         {
-          "column": "month",
+          "column": "nb_sinistres",
           "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
@@ -382,7 +382,7 @@
           "fixedValues": false
         },
         "customColors": {
-          "m_month_AVG_1": "#ff7f0e"
+          "m_nb_sinistres_AVG_1": "#1f77b4"
         }
       },
       "colorGroups": [],
