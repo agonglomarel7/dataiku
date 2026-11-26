@@ -24,6 +24,10 @@
       },
       {
         "d": true,
+        "name": "charge"
+      },
+      {
+        "d": true,
         "name": "nb_contrat_actifs"
       },
       {
@@ -79,7 +83,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "(1.0*montant_avg)/total_primes",
+        "expression": "(1.0*charge)/total_primes",
         "column": "ratio_sp",
         "errorColumn": ""
       },
@@ -161,6 +165,8 @@
     "total_primes": 141,
     "nb_contrat_actifs": 143,
     "cout_moyen": 141,
+    "charge-total": 141,
+    "charge_total": 141,
     "branche": 100,
     "frequence": 148,
     "montant_avg": 141,
