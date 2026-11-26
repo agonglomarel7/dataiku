@@ -1,7 +1,16 @@
 {
   "name": "3_Enrichissement",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "sinistres_contrats",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sinistres_clean_joined",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
