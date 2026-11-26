@@ -195,7 +195,7 @@
       "chosenToolIds": []
     }
   },
-  "name": "Dataiku_N1",
+  "name": "dev",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -251,7 +251,7 @@
       "checks": []
     }
   },
-  "shortDesc": "The project *Dataiku\u0026#95;N1*  was created by marel\u0026#46;agonglo on Nov 19th 2026",
+  "shortDesc": "The project *Dataiku\u0026#95;N1*  was created by marel\u0026#46;agonglo on Nov 19th 2026\nThe project *DEV* was copied from *DATAIKU_N1* by marel.agonglo on Nov 26th 2026",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
