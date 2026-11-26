@@ -57,7 +57,7 @@
             "configuration": {
               "useProxy": true,
               "username": "agonglomarel7",
-              "accessToken": "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",
+              "accessToken": "",
               "repository": "agonglomarel7/dataiku"
             }
           }
