@@ -71,7 +71,7 @@
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
       {"name":"count","type":"bigint"},
-      {"name":"sinistre_id_count_lag_diff2","type":"bigint"},
+      {"name":"sinistre_id_count_lag_diff","type":"bigint"},
       {"name":"charge_sum","type":"double"}
     ],
     "userModified": true
