@@ -51,31 +51,12 @@
             "isDisplacing": false,
             "insightId": "5aoEwUd",
             "insightType": "chart"
-          }
-        ]
-      },
-      "show": true,
-      "showTitle": false,
-      "titleAlign": "CENTER",
-      "titleFontColor": "#444444",
-      "titleFontSize": 28,
-      "enableCrossFilters": true,
-      "backgroundColor": "#FFFFFF",
-      "showFilterPanel": true,
-      "filtersParams": {
-        "panelPosition": "TOP",
-        "engineType": "LINO"
-      }
-    },
-    {
-      "id": "J5r13Fj",
-      "grid": {
-        "tiles": [
+          },
           {
             "displayMode": "INSIGHT",
             "clickAction": "DO_NOTHING",
             "resizeImageMode": "FIT_SIZE",
-            "id": "d61f0f0f-a52e-4543-92c8-11190fe1bdd6",
+            "id": "790a5b29-850e-4fe7-9510-40ba3026d0a0",
             "tileType": "INSIGHT",
             "tileParams": {
               "showXAxis": true,
@@ -93,7 +74,7 @@
               "useInsightTheme": false
             },
             "box": {
-              "left": 0,
+              "left": 12,
               "top": 0,
               "width": 12,
               "height": 12
@@ -116,7 +97,7 @@
             "autoLoad": true,
             "locked": false,
             "isDisplacing": false,
-            "insightId": "vH8nDDc",
+            "insightId": "4oPzuTS",
             "insightType": "chart"
           }
         ]
@@ -130,7 +111,8 @@
       "backgroundColor": "#FFFFFF",
       "showFilterPanel": true,
       "filtersParams": {
-        "panelPosition": "TOP"
+        "panelPosition": "TOP",
+        "engineType": "LINO"
       }
     }
   ],
