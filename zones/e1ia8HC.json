@@ -27,14 +27,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "kpi_sinistralite",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_kpi_sinistralite",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_kpi_sinistres_mensuel",
       "objectType": "RECIPE"
     },

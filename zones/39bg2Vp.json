@@ -1,7 +1,16 @@
 {
   "name": "4_Indicateurs",
   "color": "#C54F00",
-  "items": [],
+  "items": [
+    {
+      "objectId": "kpi_sinistralite",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_kpi_sinistralite",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
