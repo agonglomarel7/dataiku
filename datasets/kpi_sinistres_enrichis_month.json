@@ -72,8 +72,7 @@
       {"name":"charge","type":"double"},
       {"name":"count","type":"bigint"},
       {"name":"sinistre_id_count_lag_diff","type":"bigint"},
-      {"name":"charge_sum","type":"double"},
-      {"name":"count_sum","type":"bigint"}
+      {"name":"charge_sum","type":"double"}
     ],
     "userModified": true
   },
