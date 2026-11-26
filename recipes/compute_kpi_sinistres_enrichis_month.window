@@ -113,9 +113,29 @@
       "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "charge",
+      "column": "montant_avg",
       "count": false,
       "$idx": 4,
+      "sum": false,
+      "concat": false,
+      "type": "double",
+      "lead": false,
+      "min": false,
+      "avg": false,
+      "lag": false,
+      "stddev": false,
+      "value": true,
+      "leadDiff": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "lagDiff": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "charge",
+      "count": false,
+      "$idx": 5,
       "sum": true,
       "concat": false,
       "type": "double",
@@ -136,7 +156,7 @@
       "firstLastNotNull": false,
       "column": "count",
       "count": false,
-      "$idx": 5,
+      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
@@ -161,16 +181,21 @@
     {
       "windowUpperBound": 0,
       "enablePartitioning": true,
-      "enableOrdering": false,
+      "enableOrdering": true,
       "precedingRows": 0,
       "limitFollowing": false,
-      "orders": [],
+      "orders": [
+        {
+          "column": "month",
+          "desc": false
+        }
+      ],
       "limitPreceding": false,
       "followingRows": 0,
       "windowLowerBound": 0,
       "enableLimits": false,
       "partitioningColumns": [
-        "month",
+        "year",
         "branche"
       ]
     }
@@ -195,6 +220,10 @@
           {
             "name": "sinistre_id_count",
             "type": "bigint"
+          },
+          {
+            "name": "montant_avg",
+            "type": "double"
           },
           {
             "name": "charge",
