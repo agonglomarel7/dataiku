@@ -24,10 +24,6 @@
       },
       {
         "d": true,
-        "name": "nb_montants"
-      },
-      {
-        "d": true,
         "name": "cout_moyen"
       },
       {
@@ -45,10 +41,6 @@
       {
         "d": true,
         "name": "ratio_sp"
-      },
-      {
-        "d": true,
-        "name": "count"
       }
     ]
   },
@@ -103,14 +95,14 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "(1.0*charge)/nb_montants",
+        "expression": "(1.0*charge)/nb_sinistres",
         "column": "cout_moyen",
         "errorColumn": ""
       },
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -118,6 +110,20 @@
         "expression": "(1.0*nb_sinistres) / nb_contrat_actifs",
         "column": "frequence",
         "errorColumn": ""
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "count"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
