@@ -69,7 +69,7 @@
       {"name":"branche","type":"string"},
       {"name":"year","type":"bigint"},
       {"name":"sinistre_id_count","type":"bigint"},
-      {"name":"montant_sum","type":"double"},
+      {"name":"charge","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
