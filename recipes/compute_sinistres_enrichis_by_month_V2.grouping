@@ -334,7 +334,9 @@
     }
   },
   "enlargeYourBits": true,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "montant_sum": "charge"
+  },
   "computedColumns": [],
   "postFilter": {
     "$status": {
