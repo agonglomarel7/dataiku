@@ -1,24 +1,7 @@
 {
   "name": "1_Ingestion",
   "color": "#087ABF",
-  "items": [
-    {
-      "objectId": "produits",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "clients",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "contrats",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "sinistres_raw",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "position": {
     "x": 16.0,
