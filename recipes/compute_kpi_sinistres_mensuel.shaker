@@ -1,6 +1,36 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "month"
+      },
+      {
+        "d": true,
+        "name": "branche"
+      },
+      {
+        "d": true,
+        "name": "year"
+      },
+      {
+        "d": true,
+        "name": "nb_sinistres"
+      },
+      {
+        "d": true,
+        "name": "charge"
+      },
+      {
+        "d": true,
+        "name": "sinistre_id_count_lag_diff"
+      },
+      {
+        "d": true,
+        "name": "charge_sum"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +60,26 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "count"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,7 +107,16 @@
   },
   "analysisColumnData": {},
   "flagNumericValues": true,
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "nb_sinistres": 105,
+    "charge": 141,
+    "month": 100,
+    "year": 100,
+    "branche": 100,
+    "count": 100,
+    "sinistre_id_count_lag_diff": 210,
+    "charge_sum": 141
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
