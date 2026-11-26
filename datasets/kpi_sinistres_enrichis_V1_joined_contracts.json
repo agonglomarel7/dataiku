@@ -70,10 +70,9 @@
       {"name":"pays","type":"string"},
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
-      {"name":"nb_montants","type":"bigint"},
+      {"name":"count","type":"bigint"},
       {"name":"nb_contrat_actifs","type":"bigint"},
-      {"name":"total_primes","type":"double"},
-      {"name":"count","type":"bigint"}
+      {"name":"total_primes","type":"double"}
     ],
     "userModified": true
   },
