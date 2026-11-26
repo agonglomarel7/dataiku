@@ -25,6 +25,14 @@
     {
       "objectId": "compute_contrats_enrichis",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "kpi_contrats_enrichis_V1",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_kpi_contrats_enrichis_V1",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
