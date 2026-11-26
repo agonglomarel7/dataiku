@@ -41,6 +41,14 @@
     {
       "objectId": "sinistres_enrichis_by_month_V2",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_kpi_sinistres_enrichis_month",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "kpi_sinistres_enrichis_month",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
