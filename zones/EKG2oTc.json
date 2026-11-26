@@ -9,6 +9,10 @@
     {
       "objectId": "clients",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "contrats",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
