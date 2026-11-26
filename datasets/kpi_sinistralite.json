@@ -71,7 +71,6 @@
       {"name":"nb_sinistres","type":"bigint"},
       {"name":"charge","type":"double"},
       {"name":"cout_moyen","type":"double"},
-      {"name":"count","type":"bigint"},
       {"name":"nb_contrat_actifs","type":"bigint"},
       {"name":"frequence","type":"double"},
       {"name":"total_primes","type":"double"},
