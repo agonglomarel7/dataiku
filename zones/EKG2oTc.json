@@ -13,6 +13,10 @@
     {
       "objectId": "contrats",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "sinistres_raw",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
