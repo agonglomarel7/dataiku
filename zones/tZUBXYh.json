@@ -9,6 +9,14 @@
     {
       "objectId": "compute_sinistres_raw_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sinistres_clean",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sinistres_clean",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],

@@ -3,14 +3,6 @@
   "color": "#087ABF",
   "items": [
     {
-      "objectId": "compute_sinistres_clean",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "sinistres_clean",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_sinistres_clean_joined",
       "objectType": "RECIPE"
     },
