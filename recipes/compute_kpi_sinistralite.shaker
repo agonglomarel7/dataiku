@@ -24,10 +24,6 @@
       },
       {
         "d": true,
-        "name": "cout_moyen"
-      },
-      {
-        "d": true,
         "name": "nb_contrat_actifs"
       },
       {
@@ -120,10 +116,11 @@
       "type": "ColumnsSelector",
       "params": {
         "columns": [
+          "cout_moyen",
           "count"
         ],
         "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
