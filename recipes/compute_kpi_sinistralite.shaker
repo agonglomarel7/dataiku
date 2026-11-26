@@ -20,7 +20,7 @@
       },
       {
         "d": true,
-        "name": "charge"
+        "name": "montant_avg"
       },
       {
         "d": true,
@@ -83,7 +83,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "(1.0*charge)/total_primes",
+        "expression": "(1.0*montant_avg)/total_primes",
         "column": "ratio_sp",
         "errorColumn": ""
       },
@@ -95,7 +95,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "(1.0*charge)/nb_sinistres",
+        "expression": "(1.0*montant_avg)/nb_sinistres",
         "column": "cout_moyen",
         "errorColumn": ""
       },
@@ -159,13 +159,14 @@
     "ratio_sp": 148,
     "nb_sinistres": 105,
     "charge": 141,
-    "cout_moyen": 141,
     "year": 100,
-    "branche": 100,
     "count": 100,
-    "frequence": 148,
     "total_primes": 141,
     "nb_contrat_actifs": 143,
+    "cout_moyen": 141,
+    "branche": 100,
+    "frequence": 148,
+    "montant_avg": 141,
     "pays": 100,
     "nb_montants": 100
   },
