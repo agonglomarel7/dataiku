@@ -196,7 +196,6 @@
     }
   },
   "name": "Dataiku_N1",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -260,7 +259,9 @@
     },
     "lastModifiedOn": 1795085468604
   },
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
